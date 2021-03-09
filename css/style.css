@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+:root {
+  --htmlValue: 90;
+  --cssValue: 80;
+  --jsValue: 60;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -134,16 +140,16 @@ svg circle:nth-child(2) {
 }
 
 .card:nth-child(1) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  stroke-dashoffset: calc(440 - (440 * var(--htmlValue)) / 100);
   stroke: #00ff43;
 }
 
 .card:nth-child(2) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 85) / 100);
+  stroke-dashoffset: calc(440 - (440 * var(--cssValue)) / 100);
   stroke: #00a1ff;
 }
 
 .card:nth-child(3) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 60) / 100);
+  stroke-dashoffset: calc(440 - (440 * var(--jsValue)) / 100);
   stroke: #ff04f7;
 }
